@@ -1,113 +1,47 @@
-Collaborative Code Editor
-This is a collaborative real-time code editor built using React for the frontend, Express.js and Socket.IO for the backend, and WebSocket for real-time functionality. Multiple users can join a room, collaborate, and see real-time changes to code.
+<h1>Collaborative Code Editor</h1>
+<p>A real-time collaborative code editor built with React, Express.js, and Socket.IO for seamless real-time code synchronization between users.</p>
 
-Features
-Real-time collaborative code editing
-Synchronizes code changes between clients
-User management with room-based connections
-Code synchronization and broadcasting of updates
-Lightweight UI built with React
-Project Structure
-bash
-Copy code
-- src/              # React frontend code
-  - components/     # React components
-  - Actions.js      # Socket event types
-- build/            # Production build files
-- server.js         # Backend server using Express and Socket.IO
-- package.json      # Project dependencies and scripts
-Prerequisites
-Ensure you have the following installed on your machine:
+<h2>Features</h2>
+<ul>
+  <li>Real-time collaborative editing</li>
+  <li>Room-based user connections</li>
+  <li>Code synchronization across clients</li>
+</ul>
 
-Node.js (v14 or later)
-npm (v6 or later)
-yarn (optional, for managing packages)
-Install dependencies:
+<h2>Prerequisites</h2>
+<ul>
+  <li>Node.js (v14+)</li>
+  <li>npm or yarn</li>
+</ul>
 
-bash
-Copy code
-npm install
-# or
-yarn install
-Environment Variables
-Create a .env file in the root of the project with the following content:
+<h2>Environment Variables</h2>
+<p>Create a <code>.env</code> file in the root directory.</p>
 
-bash
-Copy code
-REACT_APP_BACKEND_URL=http://localhost:5000
-PORT=5000
-The REACT_APP_BACKEND_URL should point to your backend server URL.
+<h2>Available Scripts</h2>
+<ul>
+  <li><strong>npm run start:front</strong>: Starts the React frontend at <a href="http://localhost:3000">http://localhost:3000</a>.</li>
+  <li><strong>npm run start</strong>: Builds the React app and runs the backend server in production.</li>
+  <li><strong>npm run build</strong>: Builds the frontend for production.</li>
+  <li><strong>npm run server:dev</strong>: Runs the backend server with <code>nodemon</code> for live-reload during development.</li>
+  <li><strong>npm run server:prod</strong>: Runs the backend server in production.</li>
+</ul>
 
-Available Scripts
-In the package.json file, the following scripts are available to manage the project:
+<h2>Running the Project</h2>
 
-npm run start:front
-Runs the React frontend in development mode.
+<h3>Development</h3>
+<ul>
+  <li>Start the server: <code>npm run server:dev</code></li>
+  <li>Start the frontend: <code>npm run start:front</code></li>
+</ul>
 
-Open http://localhost:3000 to view it in the browser. The page will reload if you make edits.
+<h3>Production</h3>
+<ul>
+  <li>Build the frontend: <code>npm run build</code></li>
+  <li>Run the server: <code>npm run server:prod</code></li>
+</ul>
 
-bash
-Copy code
-npm run start:front
-npm run start
-This command builds the React app and then starts the server in production mode.
-
-bash
-Copy code
-npm run start
-npm run build
-Builds the React app for production to the build folder. It correctly bundles React in production mode and optimizes the build for the best performance.
-
-bash
-Copy code
-npm run build
-npm run server:dev
-Starts the Express.js backend with nodemon in development mode. The server will reload when files are changed.
-
-bash
-Copy code
-npm run server:dev
-npm run server:prod
-Starts the Express.js backend in production mode.
-
-bash
-Copy code
-npm run server:prod
-npm test
-Launches the test runner in interactive watch mode for the frontend (React).
-
-bash
-Copy code
-npm test
-npm eject
-This will remove the single build dependency from your project. Note: this is a one-way operation. Once you eject, you can’t go back!
-
-bash
-Copy code
-npm eject
-How to Run
-Development Mode
-Start the backend server:
-bash
-Copy code
-npm run server:dev
-Start the frontend:
-bash
-Copy code
-npm run start:front
-Open http://localhost:3000 in the browser. The frontend will automatically connect to the backend via WebSocket for real-time collaboration.
-Production Mode
-Build the React app:
-bash
-Copy code
-npm run build
-Start the production server:
-bash
-Copy code
-npm run server:prod
-Open http://localhost:5000 in the browser.
-Technologies Used
-Frontend: React, CodeMirror (for the code editor)
-Backend: Express.js, Socket.IO
-WebSocket: For real-time communication
-Deployment: Node.js server to run both frontend and backend
+<h2>Technologies</h2>
+<ul>
+  <li>Frontend: React, CodeMirror</li>
+  <li>Backend: Express.js, Socket.IO</li>
+</ul>
